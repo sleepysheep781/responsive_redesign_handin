@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="styles.css" />
+        <title>Redesign Page</title>
+    </head>
+    
+    <body>
+        <nav class="navbar">
+            <!-- LOGO -->
+            <div class="logo">Welcome!</div>
+            <!-- NAVIGATION MENU -->
+            <ul class="nav-links">
+                <!-- USING CHECKBOX HACK -->
+                <input type="checkbox" id="checkbox_toggle" />
+                <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+                <!-- NAVIGATION MENUS -->
+                <div class="menu">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li class="services"><a href="/">Menu</a>
+                    <!-- DROPDOWN MENU -->
+                        <ul class="dropdown">
+                            <li><a href="/">Appetizers </a></li>
+                            <li><a href="/">Soup</a></li>
+                            <li><a href="/">Rice</a></li>
+                            <li><a href="/">Meat</a></li>
+                            <li><a href="/"> Dessert</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/">Shopping Cart</a></li>
+                    <li><a href="/">Contact</a></li>
+                </div>
+            </ul>
+        </nav>
+        
+        <div><img src="head.png" alt="head image" /></div>
+
+        <div class="container">
+          <input type="text" placeholder="Search for dishes..">
+          
+          <h2 class="heading-text">Meat <span>Menu</span></h2>
+          
+          <ul class="image-gallery">            
+            <li>
+              <img src="Dry Pot Beef.jpg" alt="" />
+              <div class="name"><a href="/">Dry Pot Beef</a></div>
+            </li>
+            <li>
+              <img src="Garlic Pork Ribs.jpg" alt="" />
+              <div class="name"><a href="/">Garlic Pork Ribs</a></div>
+            </li>
+            <li>
+              <img src="General Tso's Chicken.jpeg" alt="" />
+              <div class="name"><a href="/">General Tso's Chicken</a></div>
+            </li>
+            <li>
+                <img src="Broccoli Beef.jpg" alt="" />
+                <div class="name"><a href="/">Broccoli Beef</a></div>
+              </li>
+              <li>
+                <img src="Kung Po Chicken.jpeg" alt="" />
+                <div class="name"><a href="/">Kung Po Chicken</a></div>
+              </li>
+          </ul>
+        </div>
+
+    </body>
+</html>

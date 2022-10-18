@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<title>Responsive Redesign</title>
+	<link rel="stylesheet" href="style_index.css" />
+</head>
+<body>
+	
+
+	<div class="container">
+		<header id="main-header">
+			<h1>Responsive Redesign</h1>
+		</header>
+		<article class="part1">
+			<h2 class="part-title">Part 1:  Identifying Usability Problems</h2>
+				<h3 class="problem-title">1) Picking a Web page</h3>
+				<p class="answer-text">The chosen website is the ordering website of Chong Qing House.</p>
+				<p class="answer-text">Why: This site is accessible to anyone, but it's not that popular. 
+					Dishes at Chong Qing House taste good, but its ordering site is hard to use. So I want to redesign it.</p>
+				<a class="answer-text" href="https://www.chongqinghouse.net">Link: https://www.chongqinghouse.net</a>
+				<img class="responsive" src="Screen_cqhs.png" alt="" />
+				<h3 class="problem-title">2) Finding Problems</h3>
+				<ol class="answer-text">
+					<li>The layout design violates aesthetic and minimalist design principles. Currently there are multiple navbars 
+						and everything is displayed on one page. It is best to integrate category and cart items into the navigation bar, 
+						so that users can access different web pages in the navigation bar.</li>
+						<img class="text-img" src="2 navi bars.png" alt="" />
+					<li>The page doesn't provide enough help and documentation. For example, I have no idea about the difference 
+						between Vegetable Egg Rolls and Shanghai Spring Rolls. Both of them are rolls and share the same price. 
+						I don't know which one to order. Another example is the absence of a search bar. If I want to order Double Pork, 
+						I need to look in the long dish list, which is quite annoying. </li>
+					<li>Photo album. Some photos have captions with the name of the dish, while most images don't. 
+						There are even several identical images.</li>
+						<img class="text-img" src="bad phone album.png" alt="" />
+					<li>The Menu page doesn’t minimize user’s memory load. There is only text for each dish. 
+						The corresponding image is in another page. If the user want to know what Wonto Soup looks like, 
+						he need to recall or look at the image in the Photo album page and then go back to order. 
+						Instead, if a user click the name of a dish, it would be better to display its image and order options.</li>
+					<li>Payment methods indicated by the pictures and text are inconsistent. The payment methods shown in the pictures are 
+						credit card and cash, while the payment methods indicated by the text are WeChat, Alipay, credit card and BOA transfer.</li>
+						<img class="text-img" src="inconsistent payment methods.png" alt="" />
+					<li>Low flexibility and efficiency of use. The website doesn’t allow users to tailor frequent actions. 
+						There is no option for user to perform the same order as last time.</li>
+					<li>No error prevention. If the user clicks the delete button by mistake, 
+						there is no confirmation message before the action is performed. </li>  
+				</ol>
+
+				<h3 class="problem-title">3) Accessibility</h3>
+				<ul class="ap-gallery">            
+					<li><img src="ap1.png" alt="" /></li>
+					<li><img src="ap2.png" alt="" /></li>
+					<li><img src="ap3.png" alt="" /></li>
+					<li><img src="ap4.png" alt="" /></li>
+				</ul>
+				<p class="answer-text">I agree with the problems detected.</p>
+				<ol class="answer-text">
+					<li>The images of checkout option don’t have alternative text. Adding alternative text to image is important. 
+						Because it can pass the content of an image to a blind person using a screen reader. It is useful for a 
+						sighted person when the image fails to load. It is also used for search engine trying to understand the 
+						content of a web page.</li>
+					<li>The opening hours table has broken ARIA reference problem. Without an ARIA reference target, 
+						a screen readers won't recognize these relationships, and blind users may miss key information.</li>
+					<li>The main Menu part doesn’t have sufficient contrast between text and its background color. 
+						<a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html">According to WCAG 2.0, </a> 
+						the contrast ratio between text and its background should be at least 4.5:1. In the main Menu part, 
+						the background color is #FAD3C7, the text color is #E04406, their contrast ratio is 3.04:1. 
+						This is not friendly to users with color blindness or low vision.</li>
+					<li>There are redundant links in the main Menu part. The image and text lead to the same address.</li>
+				</ol>
+		</article>
+
+		<article class="part2">
+			<h2 class="part-title">Part 2: Visual Redesign</h2>
+			<h3 class="problem-title">1) Low-fidelity Wireframing</h3>
+			<ul class="fi-image">            
+				<li>
+					<img src="lowfi-desktop.png" alt="" />
+					<div class="name">Desktop</div>
+				</li>
+				<li>
+					<img src="lowfi-tablet.png" alt="" />
+					<div class="name">Tablet</div>
+				</li>
+				<li>
+					<img src="lowfi-phone.png" alt="" />
+					<div class="name">Phone</div>
+				</li>
+			</ul>
+			
+			<h3 class="problem-title">2) Visual Design Style Guide</h3>
+			<img class="responsive" src="vs_guide.png" alt="" />
+
+			<h3 class="problem-title">3) High-Fidelity Prototyping</h3>
+			<img class="responsive" src="highfi-desktop.png" alt="" />
+			<img class="responsive" src="highfi-tablet.png" alt="" />
+			<img class="responsive" src="highfi-phone.png" alt="" />
+			<!--ul class="fi-image">            
+				<li>
+					<img src="highfi-Mac.png" alt="" />
+					<div class="name">Desktop</div>
+				</li>
+				<li>
+					<img src="highfi-iPad.png" alt="" />
+					<div class="name">Tablet</div>
+				</li>
+				<li>
+					<img src="highfi-iPhone.png" alt="" />
+					<div class="name">Phone</div>
+				</li>
+			</ul-->
+
+		</article>
+
+		<article class="part3">
+			<h2 class="part-title">Part 3: Responsive Redesign</h2>
+			  <a class="answer-text" href="redesign.html">Go to redesign page</a>
+			  
+		</article>
+		
+
+		<article>
+			<h2 class="part-title">Reference</h2>
+			<ul class="answer-text">            
+				<li>All the images on redesigned page come from original website.</li>
+				<li>Media query: <a href="https://www.w3schools.com/cssref/css3_pr_mediaquery.asp">https://www.w3schools.com/cssref/css3_pr_mediaquery.asp</a></li>
+			</ul>
+			
+		</article>
+		
+	</div>
+
+	
+</body>
+</html>
